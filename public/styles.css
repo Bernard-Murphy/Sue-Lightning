@@ -1,0 +1,107 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100vh;
+    border: 0 !important;
+}
+
+
+@font-face{
+    font-family: Raleway;
+    src: url('/Raleway-Regular.ttf');
+}
+
+body {
+    background: #272b30;
+}
+
+h1 {
+    font-family: Raleway, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 3.2rem;
+    margin-top: 20px;
+}
+
+.div-vid-container {
+    width: 1260px;
+    max-width: 85%;
+    background: whitesmoke;
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.div-vid-container:hover {
+    background: black;
+    border: 4px solid whitesmoke;
+}
+
+.img-character {
+    display: block;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.h2-title {
+    font-family: Raleway, 'Times New Roman', Times, serif;
+    font-size: 2.4rem;
+}
+
+.p-info {
+    font-family: Raleway, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+}
+
+.div-info {
+    padding: 10px;
+}
+
+.div-top-container {
+    display: flex;
+}
+
+#vid {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+}
+
+@media (max-width: 500px){
+    .div-top-container {
+        display: block;
+        margin: 5px auto;
+    }
+
+    .h2-title, .p-info {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .img-character {
+        margin: 0 auto;
+    }
+}
